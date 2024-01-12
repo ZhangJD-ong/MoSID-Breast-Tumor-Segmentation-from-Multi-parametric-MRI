@@ -5,8 +5,6 @@ Please see:
 * Confernce paper: MoSID: Modality-Specific Information Disentanglement from Multi-parametric MRI for Breast Tumor Segmentation (https://link.springer.com/chapter/10.1007/978-3-031-45350-2_8)
 * Journal paper: Modality-Specific Information Disentanglement from Multi-parametric MRI for Breast Tumor Segmentation and Computer-aided Diagnosis (https://ieeexplore.ieee.org/document/10388458)
 
-![image](https://github.com/ZhangJD-ong/AI-assistant-for-breast-tumor-segmentation/blob/main/Img/Framework.png)
-
 ## Introduction:
 This project includes both train/test code for training the MoSID framwork.
 
@@ -22,12 +20,6 @@ This project includes both train/test code for training the MoSID framwork.
 
 ## Setup
 
-### Installation
-Clone and repo and install required packages:
-```
-git clone git@github.com:ZhangJD-ong/AI-assistant-for-breast-tumor-segmentation.git
-pip install -r requirement.txt
-```
 ### Dataset
 * For training the segmentation models, you need to put the data in this format：
 
@@ -77,40 +69,12 @@ pip install -r requirement.txt
 ├─'Ruijin_1010'
 ...
 ```
-* For inference on own data, user should put the new data in this format:
-```
-./Inference-code/Data/Original_data
-├─name1
-      ├─P0.nii.gz
-      ├─P1.nii.gz
-      ...
-      └─P5.nii.gz
-├─name2
-├─name3
-...
-```
-
-### Training and testing
-* For training the segmentation model, please add data path and adjust model parameters in the file: ./Train-and-test-code/options/BasicOptions.py. 
-```
-cd ./Train-and-test-code
-python train.py
-python test.py
-```
-### Inference on own data
-* Please put the new data in the fold: ./Inference-code/Data/Original_data. The segmentation results can be find in ./Inference-code/Results/Tumor/.
-```
-cd ./Inference-code
-python test.py
-```
-* We release the well-trained model (Can be downloaded from https://drive.google.com/drive/folders/1Sos8NK4zzkT1L96saffsg4EpUyjwRSjm?usp=sharing , due to the memory limitation in Github) and five samples to guide usage. Please put the download 'Trained_model' folder in ./Inference-code/.
-* The data can only be used for academic research usage.
-* More data are available at https://doi.org/10.5281/zenodo.8068383.
 
 ## Citation
 If you find the code or data useful, please consider citing the following papers:
 
-* Zhang et al., A robust and efficient AI assistant for breast tumor segmentation from DCE-MRI via a spatial-temporal framework, Patterns (2023), https://doi.org/10.1016/j.patter.2023.100826
+* Zhang et al., MoSID: Modality-Specific Information Disentanglement from Multi-parametric MRI for Breast Tumor Segmentation, MICCAI Workshop on Cancer Prevention through Early Detection (2023), https://doi.org/10.1007/978-3-031-45350-2_8
+* Chen et al., Modality-Specific Information Disentanglement from Multi-parametric MRI for Breast Tumor Segmentation and Computer-aided Diagnosis, IEEE Transactions on Medical Imaging (2023), https://doi.org/10.1109/TMI.2024.3352648
 * Zhang et al., Recent advancements in artificial intelligence for breast cancer: Image augmentation, segmentation, diagnosis, and prognosis approaches, Seminars in Cancer Biology (2023), https://doi.org/10.1016/j.semcancer.2023.09.001
 
 
