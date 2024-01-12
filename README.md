@@ -8,7 +8,7 @@ Please see:
 ## Introduction:
 This project includes both train/test code for training the MoSID framwork.
 
-![image](https://github.com/ZhangJD-ong/MoSID-Breast-Tumor-Segmentation-from-Multi-parametric-MRI/tree/main/Img/Framework.png)
+![Image](https://github.com/ZhangJD-ong/Iterative-Cycle-consistent-Semi-supervised-Learning-for-fibroglandular-tissue-segmentation/blob/main/img/Framework2.png)
 
 ## Requirements:
 * python 3.10
