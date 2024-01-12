@@ -27,48 +27,32 @@ This project includes both train/test code for training the MoSID framwork.
 ./data
 ├─train.txt
 ├─test.txt
-├─Guangdong
-      ├─Guangdong_1
-          ├─P0.nii.gz
-          ├─P1.nii.gz
-          ├─P2.nii.gz
-          ├─P3.nii.gz
-          ├─P4.nii.gz     
-          └─P5.nii.gz
-      ├─Guangdong_2
-      ├─Guangdong_3
+├─MRI1
+      ├─ADC.nii.gz
+      ├─T2w.nii.gz
+      ├─P0.nii.gz
+      ├─P2.nii.gz   
+      └─GT.nii.gz
       ...
-├─Guangdong_breast
-      ├─Guangdong_1.nii.gz
-      ├─Guangdong_2.nii.gz
-      ├─Guangdong_2.nii.gz
-      ...
-├─Guangdong_gt
-      ├─Guangdong_1.nii.gz
-      ├─Guangdong_2.nii.gz
-      ├─Guangdong_2.nii.gz
-      ...         
-└─Yunzhong
-└─Yunzhong_breast
-└─Yunzhong_gt
-└─Ruijin
-└─Ruijin_breast
-└─Ruijin_gt
+├─MRI99        
+└─MRI100
 ...
 ```
 * The format of the train.txt / test.txt is as follow：
 ```
 ./data/train.txt
-├─'Guangdong_1'
-├─'Guangdong_2'
-├─'Guangdong_3'
+├─'MRI1'
+├─'MRI2'
+├─'MRI3'
 ...
-├─'Yunzhong_100'
-├─'Yunzhong_101'
-...
-├─'Ruijin_1010'
+├─'MRI100'
 ...
 ```
+
+### Whole Breast Segmentation Model
+* The whole breast segmentation process can be used to remove the oversegmentation on non-breast regions.
+* Partial images and whole breast annotations are available at: https://github.com/ZhangJD-ong/AI-assistant-for-breast-tumor-segmentation
+
 
 ## Citation
 If you find the code or data useful, please consider citing the following papers:
